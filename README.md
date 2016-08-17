@@ -1,4 +1,4 @@
-# Justin Bahn Design Extension
+# Justin Bahn Design Extensions
 
 Make every website look like it was designed by Justin Bahn!
 
