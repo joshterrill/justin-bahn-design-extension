@@ -6,4 +6,4 @@ Make every website look like it was designed by Justin Bahn!
 
 1. Drag and drop `justin-bahn-design-extension.crx` into extensions window on Chrome.
 
-![DesignTool](http://i.imgur.com/Y2Eaboh.png)
+![DesignTool](http://i.imgur.com/Y2Eaboh.png)
