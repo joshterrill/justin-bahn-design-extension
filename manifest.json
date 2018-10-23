@@ -1,16 +1,22 @@
 {
   "name": "Justin Bahn Design Extension",
-  "version": "1",
+  "version": "2",
   "manifest_version": 2,
   "description": "Make every website look like it was designed by Justin Bahn!",
-  "background_page": "background.html",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
   "browser_action": {
     "name": "justin-bahn-design-tool",
-    "icons": ["icon.png"],
-    "default_icon": "icon.png"
+      "icons": ["icon.png"],
+      "default_icon": "icon.png"
   },
-  "content_scripts": [ {
-    "js": [ "jquery.min.js", "background.js" ],
-    "matches": [ "http://*/*", "https://*/*"]
-  }]
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
 }

@@ -1,7 +1,7 @@
-$(function() {
-  // where the magic happens....
-  $("*").css("border", "4px red solid");
-  if ($("iframe").length > 0) {
-    $("iframe").contents().find("*").css("border", "4px red solid");
-  }
-});
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+  chrome.browserAction.onClicked.addListener(function (tab) {
+    // for the current tab, inject the "inject.js" file & execute it
+    chrome.tabs.executeScript(tab.ib, {
+      file: 'inject.js'
+    });
+  });}); 
