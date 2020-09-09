@@ -1,6 +1,5 @@
 (function() {
   let value = localStorage.getItem('state');
-  console.log('Value is ' + value);
   if (!value) {
     localStorage.setItem('state', 'true');
   } else {
