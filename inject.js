@@ -6,7 +6,7 @@
     if (value === 'true') {
       const elements = document.querySelectorAll('*');
       for (element of elements) {
-        element.style.border = '4px red solid';
+        element.style.border = '4px red solid !important';
       }
       localStorage.setItem('state', 'false');
     } else {
